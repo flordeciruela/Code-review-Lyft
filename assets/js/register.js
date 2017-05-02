@@ -1,10 +1,13 @@
 document.getElementById("phone").addEventListener("click", function() {
   document.getElementById("register-form").setAttribute("class", "register-form-full");
-  var phone = document.getElementById("phone");
-  var name = document.getElementById("name");
-  var email = document.getElementById("email");
-  var city = document.getElementById("city");
-  name.classList.remove("none");
-  email.classList.remove("none");
-  city.classList.remove("none");
+  document.getElementById("name").classList.remove("none");
+  document.getElementById("email").classList.remove("none");
+  document.getElementById("city").classList.remove("none");
 });
+
+var phone = document.getElementById("phone");
+phone.addEventListener("blur", function() {
+  if (phone.value.length == 0) {
+    document.getElementById("phone-field").setAttribute("class", "incorrect");
+  }
+})

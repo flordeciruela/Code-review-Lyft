@@ -87,3 +87,20 @@
 .none {
   display: none;
 }
+
+fieldset {
+  position: relative;
+  border: none;s
+}
+
+.incorrect input[type="text"] {
+  border-bottom: 1px red solid !important;
+}
+
+.incorrect .icon-circle-with-cross {
+  position: absolute;
+  color: red;
+  bottom: 24px;
+  right: 0;
+  display: block;
+}
