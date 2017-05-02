@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-header {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.tab-list {
+  position: absolute;
+  top: 35px;
+  right: 80px;
+}
+
+.tab-list a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+}
+
+.white-bg {
+  background-color: yellow;
+}
+
+.white-bg a {
+  color: #000;
+}
+
+.transparent-bg {
+  background-color: red;
+}
+
+.transparent-bg a {
+  color: #fff;
+}
+
+.logo {
+  width: 71px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+}
+
+.logo-white {
+  background-image: url("../img/img-lyft/logo-white.png");
+}
+
+.logo-pink {
+  background-image: url("../img/img-lyft/logo-pink.png");
+}
