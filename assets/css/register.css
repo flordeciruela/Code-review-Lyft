@@ -1,9 +1,6 @@
 #sign-up {
   width: 100%;
-  height: auto;
-  position: absolute;
-  z-index: -2;
-  top: 0px;
+  height: 715px;
 }
 
 #video {
