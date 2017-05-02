@@ -1,0 +1,99 @@
+footer {
+  width: 100%;
+  height: 525px;
+  background-color: #333447;
+  color: #fff;
+  padding: 70px 140px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff00bf;
+}
+
+.top {
+  margin-bottom: 50px;
+}
+
+.footer-left, .footer-center, .footer-right, .footer-apps{
+  display: inline-block;
+}
+
+.footer-center, .footer-right {
+  margin-left: 150px;
+}
+
+.footer-apps {
+  vertical-align: top;
+  margin-left: 200px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  line-height: 3;
+  font-weight: 300;
+}
+
+footer h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.iphone, .android, .microsoft {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 135px;
+  height: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.iphone {
+  background-image: url("../img/img-lyft/apple-store.svg");
+}
+
+.android {
+  background-image: url("../img/img-lyft/google-play.png");
+}
+
+.microsoft {
+  background-image: url("../img/img-lyft/microsoft.png");
+}
+
+.middle {
+  width: 750px;
+  border-bottom: 1px #fff solid;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.circle {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  padding: 8px;
+  border: 1px #fff solid;
+  border-radius: 21px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 30px;
+}
+
+[class^="icon-"]:hover {
+  color: #ff00bf;
+}
+
+.circle:hover {
+  border: 1px #ff00bf solid;
+}

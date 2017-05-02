@@ -5,9 +5,148 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets\css\main.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="assets\css\register.css">
+  <link rel="stylesheet" href="assets\fonts\icomoon\style.css">
+  <link rel="stylesheet" href="assets\css\about.css">
+  <link rel="stylesheet" href="assets\css\videos.css">
+  <link rel="stylesheet" href="assets\css\footer.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+  <link rel="icon" href="assets\img\favicon.ico">
+  <title>Lyft</title>
 </head>
 <body>
+  <nav id="nav-header" class="transparent-bg">
+    <a href="#" id="logo" class="logo-white"></a>
+    <div class="tab-list">
+      <a href="#drive">Drive</a>
+      <a href="#explore">Explore</a>
+      <a href="#help">Help</a>
+      <a href="#log-in" id="log-in-bt">Log in</a>
+      <a href="#sign-up" id="sign-up-bt">Sign up</a>
+    </div>
+  </nav>
+  <header id="sign-up">
+    <div class="video-container">
+      <video id="video" autoplay loop muted="">
+        <source src="assets\img\img-lyft\hero-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <form class="register-form-collapse" id="register-form" onsubmit="return false">
+      <h1 class="uppercase">Turn miles into money</h1>
+      <h4 class="uppercase">Sign up to drive with lyft.</h4>
+      <fieldset id="phone-field">
+        <input type="text" id="phone" placeholder="Phone number"><span class="icon-circle-with-cross none"></span>
+      </fieldset>
+      <fieldset id="name-field">
+        <input type="text" id="name" placeholder="Name" class="none"><span class="icon-circle-with-cross none"></span>
+      </fieldset>
+      <fieldset id="email-field">
+        <input type="text" id="email" placeholder="Email" class="none"><span class="icon-circle-with-cross none"></span>
+      </fieldset>
+      <fieldset id="city-field">
+        <input type="text" id="city" placeholder="City" class="none"><span class="icon-circle-with-cross none"></span>
+      </fieldset>
+      <div class="form-links">
+        <button type="submit" name="button" id="submit">Become a driver</button>
+        <a href="#">Sign up to drive</a>
+      </div>
+      <p class="small-letters">Already applied? Check the status of your application here.</p>
+      <p class="small-letters">Earn money for inviting your friends to drive. Learn more.</p>
+    </form>
+  </header>
+  <section id="about">
+    <div class="about-text">
+      <article>
+        <h2 class="uppercase" >a ride in minutes</h2>
+        <p class="art1">Request a ride and you'll be in your ride in minutes.</p>
+        <p class="art1">Request. Ride. Repeat.</p>
+      </article>
+      <article>
+        <h2 class="uppercase">Serious about safety</h2>
+        <p  class="art2">From knowing the color of your driver's car to our 24/7 Trust and Safety team, we got you.</p>
+      </article>
+      <article>
+        <h2 class="uppercase">Happy drivers.</h2>
+        <h2 class="uppercase">Happy riders.</h2>
+        <p  class="art3">Ride with us and you'll see why 9 out 10 rides end with five stars.</p>
+      </article>
+    </div>
+    <div class="phone-layers"></div>
+  </section>
+  <section class="video-section">
+    <article class="video-art">
+      <p class="uppercase small">watch</p>
+      <h3 class="uppercase">amplify your ride</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </article>
+    <iframe src="https://www.youtube.com/embed/fLSmUWOYpKw" frameborder="0" allowfullscreen></iframe>
+  </section>
+  <section class="video-section">
+    <iframe src="https://www.youtube.com/embed/v8nyGzOLsdw" frameborder="0" allowfullscreen></iframe>
+    <article class="video-art">
+      <p class="uppercase small">watch</p>
+      <h3 class="uppercase">June</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </article>
+  </section>
+  <section class="video-section">
+    <article class="video-art">
+      <p class="uppercase small">watch</p>
+      <h3 class="uppercase">A good thing going</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </article>
+    <iframe src="https://www.youtube.com/embed/xj2VWLV0xCU" frameborder="0" allowfullscreen></iframe>
+  </section>
+  <footer>
+    <div class="top">
+      <div class="footer-left">
+        <h3 class="uppercase">Log in</h3>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Cities</a></li>
+          <li><a href="#">Airports</a></li>
+          <li><a href="#">Fare Estimate</a></li>
+        </ul>
+      </div>
+      <div class="footer-center">
+        <h3 class="uppercase">Partner</h3>
+        <ul>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Enterprise</a></li>
+          <li><a href="#">Ambassadors</a></li>
+          <li><a href="#">Developers</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h3 class="uppercase">Learn</h3>
+        <ul>
+          <li><a href="#">Safety</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-apps">
+        <div class="iphone"></div>
+        <div class="android"></div>
+        <div class="microsoft"></div>
+      </div>
+    </div>
+    <div class="middle">
+      <span class="icon-facebook circle"></span>
+      <span class="icon-instagram circle"></span>
+      <span class="icon-twitter2 circle"></span>
+    </div>
+    <div class="bottom">
+      <p>&copy; 2017, Lyft Inc. Terms, Privacy</p>
+    </div>
+  </footer>
+
+  <script src="assets\js\scroll.js" charset="utf-8"></script>
   <script src="assets\js\app.js" charset="utf-8"></script>
+  <script src="assets\js\register.js" charset="utf-8"></script>
 </body>
 </html>

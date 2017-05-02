@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0)0%,rgb(118, 39, 143) 11%, #2b1e66 100%);
+}
+
+#nav-header {
+  width: 100%;
+  height: 115px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.tab-list {
+  position: absolute;
+  top: 35px;
+  right: 80px;
+}
+
+.tab-list a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  font-weight: lighter;
+}
+
+.tab-list a:hover {
+  color: #ff00bf;
+}
+
+.white-bg #log-in-bt {
+  border: 1px #000 solid;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.transparent-bg #log-in-bt {
+  border: 1px #fff solid;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.white-bg #sign-up-bt {
+  border: 1px #EA0B8C solid;
+  color:#EA0B8C;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.transparent-bg #sign-up-bt {
+  border: 1px transparent solid;
+  color: transparent;
+  border-radius: 8px;
+  padding: 10px 20px;
+  visibility: hidden;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.white-bg a {
+  color: #333447;
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.transparent-bg a {
+  color: #fff;
+}
+
+#logo {
+  width: 70px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 22.5px;
+  left: 80px;
+}
+
+.logo-white {
+  background-image: url("../img/img-lyft/logo-white.png");
+}
+
+.logo-pink {
+  background-image: url("../img/img-lyft/logo-pink.png");
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
