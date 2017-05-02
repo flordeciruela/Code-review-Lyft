@@ -1,3 +1,4 @@
+//Mostrar inputs al clickear phone
 document.getElementById("phone").addEventListener("click", function() {
   document.getElementById("register-form").setAttribute("class", "register-form-full");
   document.getElementById("name").classList.remove("none");
@@ -5,6 +6,16 @@ document.getElementById("phone").addEventListener("click", function() {
   document.getElementById("city").classList.remove("none");
 });
 
+//Primera letra mayuscula nombre
+function firstUpperCase() {
+  var id = document.getElementById(this.id);
+  var newValue = id.value.charAt(0).toUpperCase() + id.value.substring(1).toLowerCase();
+  document.getElementById(this.id).value = newValue;
+}
+document.getElementById("name").addEventListener("keyup", firstUpperCase);
+document.getElementById("city").addEventListener("keyup", firstUpperCase);
+
+//Mostrar/ocultar validación cuando input pierde el foco
 var phone = document.getElementById("phone");
 phone.addEventListener("blur", function() {
   if (phone.value == null || phone.value.length == 0 || ( !(/^\d{9}$/.test(phone.value) )) ) {

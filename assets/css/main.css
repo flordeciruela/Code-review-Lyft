@@ -31,6 +31,10 @@ body {
   font-weight: lighter;
 }
 
+.tab-list a:hover {
+  color: #ff00bf;
+}
+
 .white-bg #log-in-bt {
   border: 1px #000 solid;
   border-radius: 8px;
