@@ -56,7 +56,7 @@ body {
 }
 
 .white-bg a {
-  color: #000;
+  color: #333447;
 }
 
 .transparent-bg {
@@ -83,4 +83,8 @@ body {
 
 .logo-pink {
   background-image: url("../img/img-lyft/logo-pink.png");
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
