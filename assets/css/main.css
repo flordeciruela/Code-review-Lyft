@@ -12,7 +12,8 @@ body {
 #nav-header {
   width: 100%;
   height: 115px;
-  position: relative;
+  position: fixed;
+  top: 0;
 }
 
 .tab-list {
@@ -24,8 +25,9 @@ body {
 .tab-list a {
   display: inline-block;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0 10px;
+  font-weight: lighter;
 }
 
 .white-bg #log-in-bt {
@@ -48,6 +50,10 @@ body {
 }
 
 .transparent-bg #sign-up-bt {
+  border: 1px transparent solid;
+  color: transparent;
+  border-radius: 8px;
+  padding: 10px 20px;
   visibility: hidden;
 }
 
@@ -68,12 +74,12 @@ body {
 }
 
 #logo {
-  width: 71px;
+  width: 70px;
   height: 50px;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
-  top: 20px;
+  top: 22.5px;
   left: 80px;
 }
 
