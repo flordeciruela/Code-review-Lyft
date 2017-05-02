@@ -5,7 +5,7 @@ window.addEventListener("scroll", function(){
      document.getElementById("nav-header").setAttribute("class","white-bg");
      document.getElementById("logo").setAttribute("class", "logo-pink");
    }
-   if(currentScroll < = 3){
+   if(currentScroll <= 3){
     document.getElementById("nav-header").setAttribute("class","transparent-bg");
     document.getElementById("logo").setAttribute("class", "logo-white");
    }
