@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: green;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0)0%,rgb(118, 39, 143) 11%, #2b1e66 100%);
 }
 
 #nav-header {
