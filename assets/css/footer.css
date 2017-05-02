@@ -6,6 +6,15 @@ footer {
   padding: 70px 140px;
 }
 
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff00bf;
+}
+
 .top {
   margin-bottom: 50px;
 }
@@ -42,6 +51,7 @@ footer h3 {
   width: 135px;
   height: 50px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .iphone {
@@ -72,9 +82,18 @@ footer h3 {
   border: 1px #fff solid;
   border-radius: 21px;
   margin-right: 60px;
+  cursor: pointer;
 }
 
 .bottom {
   text-align: center;
   margin-top: 30px;
+}
+
+[class^="icon-"]:hover {
+  color: #ff00bf;
+}
+
+.circle:hover {
+  border: 1px #ff00bf solid;
 }
