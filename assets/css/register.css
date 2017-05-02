@@ -1,0 +1,21 @@
+#sign-up {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -2;
+  top: -100px;
+}
+
+#video {
+  width: 100%;
+}
+
+.register-form {
+  width: 40%;
+  height: 430px;
+  position: absolute;
+  background-color: #fff;
+  top: 200px;
+  right: 0;
+
+}
