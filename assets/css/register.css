@@ -3,14 +3,14 @@
   height: auto;
   position: absolute;
   z-index: -2;
-  top: -100px;
+  top: -90px;
 }
 
 #video {
   width: 100%;
 }
 
-.register-form {
+.register-form-collapse{
   width: 40%;
   height: 430px;
   position: absolute;
@@ -21,7 +21,18 @@
   color: #728099;
 }
 
-.register-form h1 {
+.register-form-full{
+  width: 40%;
+  height: 600px;
+  position: absolute;
+  background-color: #fff;
+  top: 200px;
+  right: 0;
+  padding: 60px;
+  color: #728099;
+}
+
+#register-form h1 {
   width: 300px;
   color:#352384 !important;
   font-size: 2.6rem;
@@ -30,19 +41,45 @@
   margin-bottom: 10px;
 }
 
-.register-form h4 {
+#register-form h4 {
   color: #352384 !important;
   font-size: 0.9rem;
+  margin-bottom: 10px;
 }
 
-.register-form input[type="text"] {
+#register-form input[type="text"] {
   border: none;
   border-bottom: 1px #728099 solid;
   outline: none;
+  font-size: 0.9rem;
+  width: 100%;
+  margin: 23px 0;
+}
+
+.form-links {
+  margin: 10px 0 20px 0;
 }
 
 #submit {
   background-color: #ff00bf;
   border: none;
-  border-radius: 3px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+  padding: 20px 20px;
+  margin-right: 20px;
+}
+
+#register-form a {
+  color: #728099;
+}
+
+#register-form a:hover {
+  color: #ff00bf;
+}
+
+.small-letters {
+  font-size: 0.6rem;
+  line-height: 2;
+  letter-spacing: 0.3px;
 }
