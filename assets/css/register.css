@@ -3,7 +3,7 @@
   height: auto;
   position: absolute;
   z-index: -2;
-  top: -85px;
+  top: 0px;
 }
 
 #video {
@@ -15,9 +15,9 @@
   height: 430px;
   position: absolute;
   background-color: #fff;
-  top: 200px;
+  top: 115px;
   right: 0;
-  padding: 70px;
+  padding: 65px;
   color: #728099;
 }
 
@@ -26,7 +26,7 @@
   height: 600px;
   position: absolute;
   background-color: #fff;
-  top: 200px;
+  top: 115px;
   right: 0;
   padding: 65px;
   color: #728099;
