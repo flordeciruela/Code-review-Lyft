@@ -4,6 +4,7 @@ document.getElementById("phone").addEventListener("click", function() {
   document.getElementById("name").classList.remove("none");
   document.getElementById("email").classList.remove("none");
   document.getElementById("city").classList.remove("none");
+  phone.onkeypress = soloNumeros;
 });
 
 //Primera letra mayuscula nombre
@@ -12,12 +13,38 @@ function firstUpperCase() {
   var newValue = id.value.charAt(0).toUpperCase() + id.value.substring(1).toLowerCase();
   document.getElementById(this.id).value = newValue;
 }
+var soloNumeros = function(e){
+  var codigoTecla = e.keyCode;
+  var longitud = this.value.length;
+  if(codigoTecla>=48 && codigoTecla<=57 && this.value.length<=8){
+    return true;
+  }else{
+    return false;
+  }
+}
+var soloLetras = function (e){
+  var codigoTecla = e.keyCode;
+  var longitud = this.value.length;
+  if(codigoTecla>=48 && codigoTecla<=57 && this.value.length<=8){
+    return false;
+  }else{
+    return true;
+  }
+}
+
 document.getElementById("name").addEventListener("keyup", firstUpperCase);
 document.getElementById("city").addEventListener("keyup", firstUpperCase);
+document.getElementById("name").addEventListener("click", function () {
+  userName.onkeypress = soloLetras;
+});
+document.getElementById("city").addEventListener("click", function () {
+  city.onkeypress = soloLetras;
+});
 
 //Mostrar/ocultar validación cuando input pierde el foco
 var phone = document.getElementById("phone");
 phone.addEventListener("blur", function() {
+
   if (phone.value == null || phone.value.length == 0 || ( !(/^\d{9}$/.test(phone.value) )) ) {
     document.getElementById("phone-field").classList.add("incorrect");
   }  else {
