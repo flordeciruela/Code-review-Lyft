@@ -1,9 +1,16 @@
+//declaracion de variables
+var input = document.getElementsByTagName('input');
+var phone = input[0];
+var userName = input[1];
+var email = input[2];
+var city = input[3];
+
 //Mostrar inputs al clickear phone
-document.getElementById("phone").addEventListener("click", function() {
+phone.addEventListener("click", function() {
   document.getElementById("register-form").setAttribute("class", "register-form-full");
-  document.getElementById("name").classList.remove("none");
-  document.getElementById("email").classList.remove("none");
-  document.getElementById("city").classList.remove("none");
+  for (var i = 1; i < input.length; i++) {
+    input[i].classList.remove("none");
+  }
   document.getElementById("sign-up").classList.remove("margin-top");
   document.getElementsByClassName("div-transparent")[0].classList.add("bottom-position");
   phone.onkeypress = soloNumeros;
@@ -15,6 +22,7 @@ function firstUpperCase() {
   var newValue = id.value.charAt(0).toUpperCase() + id.value.substring(1).toLowerCase();
   document.getElementById(this.id).value = newValue;
 }
+//Valida solo numeros
 var soloNumeros = function(e){
   var codigoTecla = e.keyCode;
   var longitud = this.value.length;
@@ -24,6 +32,7 @@ var soloNumeros = function(e){
     return false;
   }
 }
+//Valida solo letras
 var soloLetras = function (e){
   var codigoTecla = e.keyCode;
   var longitud = this.value.length;
@@ -33,16 +42,17 @@ var soloLetras = function (e){
     return true;
   }
 }
-document.getElementById("name").addEventListener("keyup", firstUpperCase);
-document.getElementById("city").addEventListener("keyup", firstUpperCase);
-document.getElementById("name").addEventListener("click", function () {
-  userName.onkeypress = soloLetras;
+
+userName.addEventListener("keyup", firstUpperCase);
+city.addEventListener("keyup", firstUpperCase);
+userName.addEventListener("click", function () {
+  this.onkeypress = soloLetras;
 });
-document.getElementById("city").addEventListener("click", function () {
-  city.onkeypress = soloLetras;
+city.addEventListener("click", function () {
+  this.onkeypress = soloLetras;
 });
+
 //Mostrar/ocultar validación cuando input pierde el foco
-var phone = document.getElementById("phone");
 phone.addEventListener("blur", function() {
   if (phone.value == null || phone.value.length == 0 || ( !(/^\d{9}$/.test(phone.value) )) ) {
     document.getElementById("phone-field").classList.add("incorrect");
@@ -51,60 +61,60 @@ phone.addEventListener("blur", function() {
   }
 });
 
-var userName = document.getElementById("name");
 userName.addEventListener("blur", function() {
   if (userName.value == null || userName.value.length == 0 ) {
-    document.getElementById("name-field").classList.add("incorrect");
+    addIncorrect(this.parentNode);
   }  else {
-    document.getElementById("name-field").classList.remove("incorrect");
+    removeIncorrect(this.parentNode);
   }
 });
 
-var email = document.getElementById("email");
 email.addEventListener("blur", function() {
   if (email.value == null || email.value.length == 0 || ( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))) ) {
-    document.getElementById("email-field").classList.add("incorrect");
+    addIncorrect(this.parentNode);
   }  else {
-    document.getElementById("email-field").classList.remove("incorrect");
+    removeIncorrect(this.parentNode);
   }
 });
+function addIncorrect(input) {
+  input.classList.add("incorrect");
+}
+function removeIncorrect(input) {
+  input.classList.remove("incorrect");
+}
 
-var city = document.getElementById("city");
 city.addEventListener("blur", function() {
   if (city.value == null || city.value.length == 0 ) {
-    document.getElementById("city-field").classList.add("incorrect");
+    addIncorrect(this.parentNode);
   }  else {
-    document.getElementById("city-field").classList.remove("incorrect");
+    removeIncorrect(this.parentNode);
   }
 });
 
 //validacioón con botón
 document.getElementById("submit").addEventListener("click", function() {
-  var phone = document.getElementById("phone");
+
     if (phone.value == null || phone.value.length == 0 || ( !(/^\d{9}$/.test(phone.value) )) ) {
-      document.getElementById("phone-field").classList.add("incorrect");
+      addIncorrect(this.parentNode);
     }  else {
-      document.getElementById("phone-field").classList.remove("incorrect");
+      removeIncorrect(this.parentNode);
     }
 
-  var userName = document.getElementById("name");
     if (userName.value == null || userName.value.length == 0 ) {
-      document.getElementById("name-field").classList.add("incorrect");
+      addIncorrect(this.parentNode);
     }  else {
-      document.getElementById("name-field").classList.remove("incorrect");
+      removeIncorrect(this.parentNode);
     }
 
-  var email = document.getElementById("email");
     if (email.value == null || email.value.length == 0 || ( !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))) ) {
-      document.getElementById("email-field").classList.add("incorrect");
+      addIncorrect(this.parentNode);
     }  else {
-      document.getElementById("email-field").classList.remove("incorrect");
+      removeIncorrect(this.parentNode);
     }
 
-  var city = document.getElementById("city");
     if (city.value == null || city.value.length == 0 ) {
-      document.getElementById("city-field").classList.add("incorrect");
+      addIncorrect(this.parentNode);
     }  else {
-      document.getElementById("city-field").classList.remove("incorrect");
+      removeIncorrect(this.parentNode);
     }
 });
