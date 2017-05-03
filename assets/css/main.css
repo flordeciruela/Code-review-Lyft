@@ -102,7 +102,6 @@ body {
 
 .div-transparent{
   position: absolute;
-  /*top:38rem;*/
   bottom: -25px;
   width: 100%;
   height: 10rem;
@@ -110,5 +109,5 @@ body {
 }
 
 .bottom-position {
-  bottom: -125px !important;  
+  bottom: -125px !important;
 }
