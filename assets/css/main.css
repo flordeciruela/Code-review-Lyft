@@ -99,3 +99,11 @@ body {
 .uppercase {
   text-transform: uppercase;
 }
+
+.div-transparent{
+  position: absolute;
+  top:38rem;
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(transparent,#76278f);
+}
