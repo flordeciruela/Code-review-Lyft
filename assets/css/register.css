@@ -12,6 +12,7 @@
 }
 
 .register-form-collapse{
+  z-index: 10;
   width: 40%;
   height: 430px;
   position: absolute;
@@ -23,6 +24,7 @@
 }
 
 .register-form-full{
+  z-index: 10;
   width: 40%;
   height: 600px;
   position: absolute;
