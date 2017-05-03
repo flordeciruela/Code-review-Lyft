@@ -4,6 +4,7 @@ document.getElementById("phone").addEventListener("click", function() {
   document.getElementById("name").classList.remove("none");
   document.getElementById("email").classList.remove("none");
   document.getElementById("city").classList.remove("none");
+  document.getElementById("sign-up").classList.remove("margin-top");
 });
 
 //Primera letra mayuscula nombre

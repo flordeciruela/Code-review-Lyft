@@ -3,6 +3,10 @@
   height: 715px;
 }
 
+.margin-top {
+  margin-top: -100px;
+}
+
 #video {
   width: 100%;
 }
