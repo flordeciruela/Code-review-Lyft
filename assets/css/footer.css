@@ -51,25 +51,11 @@ footer h3 {
   font-weight: 400;
 }
 
-.iphone, .android, .microsoft {
-  background-repeat: no-repeat;
-  background-size: contain;
+.footer-apps img {
   width: 135px;
   height: 50px;
   margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.iphone {
-  background-image: url("../img/img-lyft/apple-store.svg");
-}
-
-.android {
-  background-image: url("../img/img-lyft/google-play.png");
-}
-
-.microsoft {
-  background-image: url("../img/img-lyft/microsoft.png");
+	display: block;
 }
 
 .middle {
